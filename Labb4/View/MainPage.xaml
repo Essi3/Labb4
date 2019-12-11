@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             mc:Ignorable="d"
+             xmlns:viewmodel="clr-namespace:Labb4.ViewModel"
+             xmlns:local="clr-namespace:Labb4;assembly=Labb4"
+             x:Class="Labb4.MainPage"
+             BackgroundColor="GhostWhite"
+             Title="Countries">
+    <!-- Place new controls here -->
+     <ContentPage.BindingContext>
+        <viewmodel:MainViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="Gray" />
+            <Setter Property="FontAttributes" Value="Bold" />
+        </Style>
+    </ContentPage.Resources>
+           
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Previous" Command=" {Binding PrevCountryCommand}"  />
+        <ToolbarItem Text="Next" Command=" {Binding NextCountryCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <StackLayout Margin="0, 100, 0, 0">
+
+        <StackLayout Orientation="Vertical" Margin="0, 0, 0, 10">
+            <!--<Image Source="{local:ImageResource Labb4.sweden.png}" WidthRequest="150" HeightRequest="100" HorizontalOptions="Center" Aspect="AspectFit" /> -->
+            <Image Source="{Binding SelectedCountry.PictureUrl}" WidthRequest="150" HeightRequest="100" HorizontalOptions="Center" Aspect="AspectFit"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical" Margin="0, 0, 0, 10">
+           <Label Text="{Binding SelectedCountry.Name, StringFormat='Country: {0}'}"
+               HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+          
+        <StackLayout Orientation="Vertical" Margin="0, 0, 0, 10">
+            <Label Text="{Binding SelectedCountry.Currency, StringFormat='Currency: {0}'}"
+               HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical" Margin="0, 0, 0, 10">
+            <Label Text="{Binding SelectedCountry.Population, StringFormat='Population: {0}'}"
+               HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+
+        <StackLayout Margin="10, 10, 10, 10">
+              <Label Text="{Binding SelectedCountry.Description}"
+               FontAttributes="None" />
+        </StackLayout>
+      
+           
+    </StackLayout>
+</ContentPage>

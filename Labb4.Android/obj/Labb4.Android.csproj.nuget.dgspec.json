@@ -1,0 +1,125 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/estherroozen/Projects/Labb4/Labb4.Android/Labb4.Android.csproj": {}
+  },
+  "projects": {
+    "/Users/estherroozen/Projects/Labb4/Labb4.Android/Labb4.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/estherroozen/Projects/Labb4/Labb4.Android/Labb4.Android.csproj",
+        "projectName": "Labb4.Android",
+        "projectPath": "/Users/estherroozen/Projects/Labb4/Labb4.Android/Labb4.Android.csproj",
+        "packagesPath": "/Users/estherroozen/.nuget/packages/",
+        "outputPath": "/Users/estherroozen/Projects/Labb4/Labb4.Android/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/estherroozen/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {
+              "/Users/estherroozen/Projects/Labb4/Labb4/Labb4.csproj": {
+                "projectPath": "/Users/estherroozen/Projects/Labb4/Labb4/Labb4.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Xamarin.Android.Support.Core.Utils": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.3.0.991221, )"
+            }
+          }
+        }
+      }
+    },
+    "/Users/estherroozen/Projects/Labb4/Labb4/Labb4.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/estherroozen/Projects/Labb4/Labb4/Labb4.csproj",
+        "projectName": "Labb4",
+        "projectPath": "/Users/estherroozen/Projects/Labb4/Labb4/Labb4.csproj",
+        "packagesPath": "/Users/estherroozen/.nuget/packages/",
+        "outputPath": "/Users/estherroozen/Projects/Labb4/Labb4/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/estherroozen/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.3.0.991221, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
